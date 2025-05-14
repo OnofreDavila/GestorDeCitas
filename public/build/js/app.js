@@ -1,7 +1,7 @@
 let paso = 1;
 const pasoInicial = 1;
 const pasoFinal = 4;
-
+//probando git
 const cita = {
     id: '',
     nombre: '',
