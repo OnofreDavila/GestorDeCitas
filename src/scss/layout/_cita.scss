@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .seccion {
     padding: 5rem 0;
     display: none;
@@ -12,4 +13,20 @@
 }
 .ocultar {
     display: none;
+=======
+.seccion {
+    padding: 5rem 0;
+    display: none;
+
+    .text-center {
+        text-align: center;
+    }
+}
+
+.mostrar {
+    display: block;
+}
+.ocultar {
+    display: none;
+>>>>>>> e73ab30300cfd69d1106b720a967b4488360ea44
 }

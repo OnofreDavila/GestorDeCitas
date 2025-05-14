@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
@@ -29,4 +30,37 @@
             color: v.$blanco;
         }
     }
+=======
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tabs {
+
+    @include m.tablet {
+        display: flex;
+
+    }
+
+    button {
+        background-color: v.$azulClaro;
+        border: none;
+        color: v.$blanco;
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: v.$bold;
+        transition: background-color 300ms ease;
+
+        &:hover {
+            cursor: pointer;
+            background-color: darken(v.$azulOscuro, 10%);
+        }
+        &.actual {
+            background-color: v.$azulOscuro;
+            color: v.$blanco;
+        }
+    }
+>>>>>>> e73ab30300cfd69d1106b720a967b4488360ea44
 }
