@@ -5,7 +5,7 @@ namespace Model;
 class Usuario extends ActiveRecord {
     //Base de datos
     protected static $tabla = 'usuarios';
-    protected static $columnasDB = ['id', 'nombre', 'apellido', 'email', 'password', 'telefono', 'tipoPerfil', 'confirmado','token'];
+    protected static $columnasDB = ['id', 'nombre', 'apellido', 'email', 'password', 'telefono', 'admin', 'confirmado','token'];
 
     //Atributos, public para poder acceder desde clase misma y despues de ser instanciados.
     public $id;
@@ -14,7 +14,7 @@ class Usuario extends ActiveRecord {
     public $email;
     public $password;
     public $telefono;
-    public $tipoPerfil;
+    public $admin;
     public $confirmado;
     public $token;
 
@@ -26,7 +26,7 @@ class Usuario extends ActiveRecord {
         $this->email = $args['email'] ?? '';
         $this->password = $args['password'] ?? '';
         $this->telefono = $args['telefono'] ?? '';
-        $this->tipoPerfil = $args['tipoPerfil'] ?? 0;
+        $this->admin = $args['admin'] ?? 0;
         $this->confirmado = $args['confirmado'] ?? 0;
         $this->token = $args['token'] ?? '';
 

@@ -7,18 +7,15 @@ class Router
     public array $getRoutes = [];
     public array $postRoutes = [];
 
-    public function get($url, $fn)
-    {
+    public function get($url, $fn){
         $this->getRoutes[$url] = $fn;
     }
 
-    public function post($url, $fn)
-    {
+    public function post($url, $fn){
         $this->postRoutes[$url] = $fn;
     }
 
-    public function comprobarRutas()
-    {
+    public function comprobarRutas(){
         
         // Proteger Rutas...
         session_start();
@@ -36,7 +33,6 @@ class Router
         } else {
             $fn = $this->postRoutes[$currentUrl] ?? null;
         }
-
 
         if ( $fn ) {
             // Call user fn va a llamar una función cuando no sabemos cual sera

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'onofr/app-peluqueria-canina',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'd3d37415058cdd35f1f1e0dd871f5b041c73c815',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'onofr/app-peluqueria-canina' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'd3d37415058cdd35f1f1e0dd871f5b041c73c815',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

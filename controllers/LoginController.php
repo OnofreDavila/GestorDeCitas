@@ -30,8 +30,8 @@ class LoginController {
                         $_SESSION['login'] = true;
 
                         // Redireccionamiento
-                        if($usuario->tipoPerfil === "1") {
-                            $_SESSION['tipoPerfil'] = $usuario->tipoPerfil ?? null;
+                        if($usuario->admin === "1") {
+                            $_SESSION['admin'] = $usuario->admin ?? null;
                             header('Location: /admin');
                         } else {
                             header('Location: /cita');
