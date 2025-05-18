@@ -70,11 +70,11 @@ class Email {
         $mail->isHTML(TRUE);
         $mail->CharSet = 'UFT-8';
 
-        $contenido = '<html>';
+        $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
         $contenido .= "<p>Presiona aquí: <a href='http://peluqueriacanina.alwaysdata.net/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
-        $contenido .= '</html>';
+        $contenido .= "</html>";
         $mail->Body = $contenido;
 
             //Enviar el mail

@@ -127,7 +127,7 @@ async function consultarAPI() {
 
 function mostrarServicios(servicios) {
     servicios.forEach( servicio => {
-        const { id, nombre, precio } = servicio;
+        const {id, nombre, precio } = servicio;
 
         const nombreServicio = document.createElement('P');
         nombreServicio.classList.add('nombre-servicio');
@@ -308,7 +308,7 @@ function mostrarResumen() {
     horaCita.innerHTML = `<span>Hora:</span> ${hora} Horas`;
 
     // Boton para Crear una cita
-    const botonReservar = document.createElement('BUTTON');
+    const botonReservar = document.createElement('BUTTON'); 
     botonReservar.classList.add('boton');
     botonReservar.textContent = 'Reservar Cita';
     botonReservar.onclick = reservarCita;
@@ -322,7 +322,7 @@ function mostrarResumen() {
 
 async function reservarCita() {
     
-    const { nombre, fecha, hora, servicios, id } = cita;
+    const { nombre, fecha, hora, servicios, id} = cita;
 
     const idServicios = servicios.map( servicio => servicio.id );
     // console.log(idServicios);
@@ -330,7 +330,7 @@ async function reservarCita() {
     const datos = new FormData();
     
     datos.append('fecha', fecha);
-    datos.append('hora', hora );
+    datos.append('hora', hora);
     datos.append('usuarioId', id);
     datos.append('servicios', idServicios);
 
