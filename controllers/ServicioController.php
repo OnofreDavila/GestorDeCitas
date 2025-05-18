@@ -19,7 +19,7 @@ class ServicioController {
         ]);
     }
 
-    public static function crear(Router $router) {
+    public static function crearServicio(Router $router) {
         //session_start();
         isAdmin();
         $servicio = new Servicio;
