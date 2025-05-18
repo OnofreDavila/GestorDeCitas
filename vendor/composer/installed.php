@@ -3,7 +3,7 @@
         'name' => 'onofr/app-peluqueria-canina',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '0006c4b3acca4048047583bdf7d00431b34d6dc0',
+        'reference' => 'd1008b2b375dd9907021d800252fe8031a28fc9a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'onofr/app-peluqueria-canina' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '0006c4b3acca4048047583bdf7d00431b34d6dc0',
+            'reference' => 'd1008b2b375dd9907021d800252fe8031a28fc9a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

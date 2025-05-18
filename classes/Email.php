@@ -30,7 +30,7 @@ class Email {
         $mail->Password = '267b9e3e0dc82f';
 
         //Recipiente, dominio del proyecto que debo modificar al entrar al hosting 
-        $mail->setFrom('onofrej14@gmail.com');
+        $mail->setFrom('onofrej14@gmail.com','Pëluqueria canina');
         $mail->addAddress('onofrej14@gmail.com', 'Onofre Davila');
         $mail->Subject = 'Confirma tu cuenta';
 
@@ -53,20 +53,22 @@ class Email {
 
         // create a new object
         $mail = new PHPMailer();
+        //protocolo de envio email, configuracion del servidor
         $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'sandbox.smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
         $mail->Username = 'd2dfcab7a3cb46';
         $mail->Password = '267b9e3e0dc82f';
-    
-        $mail->setFrom('onofrej14@gmail.com');
-        $mail->addAddress('onofrej14@gmail.com', 'Onofre Davila');
-        $mail->Subject = 'Reestablece tu password';
 
-        // Set HTML
+        //Recipiente, dominio del proyecto que debo modificar al entrar al hosting 
+        $mail->setFrom('onofrej14@gmail.com','Pëluqueria canina');
+        $mail->addAddress('onofrej14@gmail.com', 'Onofre Davila');
+        $mail->Subject = 'Confirma tu cuenta';
+
+        //Set HTML
         $mail->isHTML(TRUE);
-        $mail->CharSet = 'UTF-8';
+        $mail->CharSet = 'UFT-8';
 
         $contenido = '<html>';
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
