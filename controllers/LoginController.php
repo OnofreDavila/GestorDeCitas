@@ -208,7 +208,7 @@ class LoginController {
             $usuario->token=null;
             $usuario->guardar();
             //echo "token valido";
-            Usuario::setAlerta('exito','Cuenta confirmada conrrectamente');
+            Usuario::setAlerta('exito','Cuenta confirmada correctamente');
         }
         //obtener las alertas
         $alertas = Usuario::getAlertas();
